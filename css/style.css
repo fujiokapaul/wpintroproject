@@ -19,9 +19,21 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 200vh;
-    max-width: 100vmax;
+    height: 315vh;
 }
+body.home{
+    height: 155vh;
+}
+body.gallery{
+    height: 195vh;
+}
+body.about{
+    height: 160vh;
+}
+
+
+
+
 nav, section, article, aside, footer{
     border: 10px double #333;
     margin: 10px;
@@ -39,13 +51,12 @@ header{
     padding: 5px;
     background-color: black;
     color: white;
-    font-size: 40px;
+    font-size: 25px;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     background-image: url("../img/header.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 20vh;
     font-family: nodesto;
 }
 header:hover h1{
@@ -56,9 +67,10 @@ header:hover h1{
 .stepper{
     background-image:url(../img/stepper.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
-    min-height: 50vh;
+    min-height: 90vh;
+    min-width: 90vw;
 }
 .content, aside{
     width: 100%;
@@ -82,18 +94,36 @@ main{
 }
 nav{
     position: sticky;
-    top: 0px;
+    top: 10px;
     z-index: 1;
-    min-height: 40px;
     display: flex;
     justify-content: space-evenly;
     font-family: mreaves;
+}
+.imgbox{
+    position: relative;
+    float: left;
+}
+.imgbox .hoverimg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.imgbox:hover .hoverimg{
+    display: block;
+}
+.fill{
+    max-width: 100%;
 }
 audio{
     position: sticky;
 }
 p{
     text-align: center;
+}
+p.lore{
+    font-family: mreaves;
 }
 .gallery{
     display: inline-block;
@@ -104,6 +134,7 @@ p{
 }
 nav a{
     color: white;
+    font-size: 30px;
 }
 a:hover{
     color: grey;
@@ -132,8 +163,8 @@ input[type=text], select, textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical
-  }
-  input[type=button]{
+}
+input[type=button]{
     align-self: center;
     background-image: url("../img/button.jpg");
     border: none;
@@ -142,39 +173,36 @@ input[type=text], select, textarea {
     font-family: nodesto;
     font-size: 30px;
     color: white;
-  }
-  input[type=button]:hover{
+}
+input[type=button]:hover{
     opacity: 85%;
     color: green;
     transition: 0.2s;
-  }
-  .fa {
+}
+.fa {
     padding: 20px;
     font-size: 30px;
     width: 30px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
-  }
-  .social a:hover{
+}
+.social a:hover{
       opacity: 0.7;
-  }
-  .fa-facebook {
+}
+.fa-facebook {
     background: #3B5998;
     color: white;
-  }
-  .fa-twitter {
+}
+.fa-twitter {
     background: #55ACEE;
     color: white;
-  }.fa-youtube {
+}
+.fa-youtube {
     background: #bb0000;
     color: white;
-  }
-  .fa-tumblr {
+}
+.fa-tumblr {
     background: #2c4762;
     color: white;
-  }
-  .fa-reddit {
-    background: #ff5700;
-    color: white;
-  }  
+}
