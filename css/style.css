@@ -19,21 +19,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 315vh;
+    height: 200vh;
 }
-body.home{
-    height: 155vh;
-}
-body.gallery{
-    height: 195vh;
-}
-body.about{
-    height: 160vh;
-}
-
-
-
-
 nav, section, article, aside, footer{
     border: 10px double #333;
     margin: 10px;
