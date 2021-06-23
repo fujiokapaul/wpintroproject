@@ -19,7 +19,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 200vh;
+    height: 300vh;
 }
 nav, section, article, aside, footer{
     border: 10px double #333;
